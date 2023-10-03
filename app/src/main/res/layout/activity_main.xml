@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Juego del gato"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/player1"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player 1"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ximage"
+                app:tint="@color/black" />
+
+
+
+    </LinearLayout>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/player2"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player 2"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/oimage"
+                app:tint="@color/black" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/black"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            >
+
+            <TextView
+                android:id="@+id/lb1"
+                style="@style/etiqueta"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:id="@+id/lb4"
+                style="@style/etiqueta"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:id="@+id/lb7"
+                style="@style/etiqueta"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            >
+
+            <TextView
+                android:id="@+id/lb2"
+                style="@style/etiqueta"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:id="@+id/lb5"
+                style="@style/etiqueta"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:id="@+id/lb8"
+                style="@style/etiqueta"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/lb3"
+                style="@style/etiqueta"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:id="@+id/lb6"
+                style="@style/etiqueta"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:id="@+id/lb9"
+                style="@style/etiqueta"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/etiqueta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Player 1, te toca mije"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nueva partida"
+        android:textSize="22sp"
+        android:padding="15dp"
+        android:textStyle="italic"
+        android:onClick="newgame"/>
+
+
+
+</LinearLayout>
